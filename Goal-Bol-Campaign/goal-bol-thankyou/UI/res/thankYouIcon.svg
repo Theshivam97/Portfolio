@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_pop_success_tick</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BOGO_11" transform="translate(-140.000000, -225.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="Group" transform="translate(0.000000, 80.000000)">
+                <path d="M180,225 C157.9,225 140,207.1 140,185 C140,162.9 157.9,145 180,145 C202.1,145 220,162.9 220,185 C220,207.1 202.1,225 180,225 Z M201.8,169.5 C200.6,168.3 198.6,168.3 197.4,169.5 L173.4,193.8 L162.5,182.8 C161.3,181.6 159.3,181.6 158.1,182.8 C157,184 157,186 158.2,187.2 L171.3,200.4 C172.5,201.6 174.5,201.6 175.7,200.4 L201.8,174 C203,172.7 203,170.8 201.8,169.5 Z" id="ic_pop_success_tick"></path>
+            </g>
+        </g>
+    </g>
+</svg>

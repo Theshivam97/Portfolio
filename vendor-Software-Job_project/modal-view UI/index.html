@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Tempelate</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <div class="row">
+                <div class="col-12">
+                    <p>Modal View</p>
+                </div>
+            </div>
+        </div>
+        <hr class="sep">
+        <div class="second-page">
+            <div class="second-page-header">
+                <h3>Job Details</h3>
+            </div>
+            <div class="modale-admin-content">
+                <form>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Type Of Job</label>
+                        <select disabled="disabled" class="form-control" id="exampleFormControlSelect1">
+                            <option>Office Cabs</option>
+                            <option>Home cabs</option>
+                          </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Vehicle</label>
+                        <input disabled="disabled" type="Text" class="form-control" placeholder="Vehicle">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Price</label>
+                        <input disabled="disabled" type="Text" class="form-control" placeholder="Price">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Start Date</label>
+                        <input disabled="disabled" type="date" class="form-control" placeholder="Start Date">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">End Date</label>
+                        <input disabled="disabled" type="date" class="form-control" placeholder="End Date">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Is Recurring</label>
+                        <select disabled="disabled" class="form-control" id="exampleFormControlSelect1">
+                            <option>No</option>
+                            <option>Yes</option>
+                          </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Day of operation</label>
+                        <div class="form-admin-inline" style=" display: flex;justify-content: space-around;">
+                            <div class="form-check form-check-inline">
+                                <input disabled="disabled" class="form-check-input " type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Mon</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input disabled="disabled" class="form-check-input " type="checkbox" id="inlineCheckbox2" value="option2" checked="">
+                                <label class="form-check-label" for="inlineCheckbox2">Tue</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input disabled="disabled" class="form-check-input " type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Wed</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input disabled="disabled" class="form-check-input " type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Thu</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input disabled="disabled" class="form-check-input " type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Fri</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input disabled="disabled" class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Sat</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input disabled="disabled" class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Sun</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Route</label>
+                        <!--                        <input disabled="disabled" type="text" class="form-control" placeholder="Route">-->
+                        <textarea name="" disabled="disabled" class="form-control" placeholder="Route" id="" cols="30" rows="1"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Status</label>
+                        <select disabled="disabled" class="form-control" id="exampleFormControlSelect1">
+                            <option>Open</option>
+                            <option>Processed</option>
+                            <option>Closed</option>
+                          </select>
+                    </div>
+                </form>
+
+            </div>
+            <div class="second-page-footer">
+                <div class="second-page-submit">
+                    <div class="submit-page-button">
+                        <button type="button" id="publish" class="btn btn-success">Publish</button>
+                        <button type="button" id="edit" class="btn btn-success">Edit</button>
+
+                    </div>
+                    <div class="submit-page-button">
+                        <button type="button" id=save class="btn btn-primary">Save</button>
+                    </div>
+                    <div class="submit-page-button">
+                        <button type="button" id=cancel class="btn btn-light">cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="sep">
+        <div class="third-page">
+            <div class="third-page-header">
+                <h3>Vendor Details</h3>
+            </div>
+            <div class="third-page-content">
+                <div class="vendor-info">
+                    <div class="vendor-info-label">
+                        <p>Vendor's Name</p>
+                    </div>
+                    <div class="vendor-info-value">
+                        <p>Manish Kumar</p>
+                    </div>
+                </div>
+                <div class="vendor-info">
+                    <div class="vendor-info-label">
+                        <p>Telephone No.</p>
+                    </div>
+                    <div class="vendor-info-value">
+                        <p>7015714863</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('#edit').click(function() {
+        console.log('11');
+        // click t
+        $('.form-control').attr('disabled', false); // removing disabled in this class
+    });
+
+    $('#edit').click(function() {
+        console.log('11');
+        // click t
+        $('.form-check-input').attr('disabled', false); // removing disabled in this class
+    });
+
+
+    $("#edit").on("click", function() {
+
+        $("#save").css("display", "block")
+        $("#cancel").css("display", "block")
+        $("#edit").css("display", "none")
+
+
+
+    });
+    $("#cancel").on("click", function() {
+
+        $("#save").css("display", "none")
+        $("#cancel").css("display", "none")
+        $("#edit").css("display", "block")
+    });
+
+</script>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title></title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Responsive Tempelate</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+   </head>
+   <body>
+      <div class="container-fluid vendor-page">
+         
+         <div class="admin-content">
+            <div class="vendor-table-list">
+               <ul class="list-group align-list">
+                  <li class="list-group-item align-item">
+                     <a href="#">
+                        <div class="vendor-table">
+                           <div class="table-content">
+                              <div class="vendor-entity">
+                                 <div class="vendor-entity-label">
+                                    <p>Route</p>
+                                 </div>
+                                 <div class="vendor-entity-value">
+                                    <p>Delhi->Gurgaon->Rajeev Chowk->Subhash Chowk</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="list-group-item align-item">
+                     <a href="#">
+                        <div class="vendor-table">
+                           <div class="table-content">
+                              <div class="vendor-entity">
+                                 <div class="vendor-entity-label">
+                                    <p>Vehicle</p>
+                                 </div>
+                                 <div class="vendor-entity-value">
+                                    <p>Mercedes Benz Bus</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="list-group-item align-item">
+                     <a href="#">
+                        <div class="vendor-table">
+                           <div class=" row table-align-revise">
+                              <div class="col-md-6 col-xs-6 vendor-entity-label">
+                                 <p >start Date</p>
+                              </div>
+                              <div class="col-md-6 col-xs-6 vendor-entity-label">
+                                 <p>End Date</p>
+                              </div>
+                           </div>
+                           <div class=" row table-align-revise">
+                              <div class="col-md-6 col-xs-6 vendor-entity-value">
+                                 <p >12 August 2018</p>
+                              </div>
+                              <div class="col-md-6 col-xs-6 vendor-entity-value">
+                                 <p>21 August 2018</p>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="vendor-table-list">
+               <ul class="list-group align-list">
+                  <li class="list-group-item align-item">
+                     <a href="#">
+                        <div class="vendor-table">
+                           <div class="table-content">
+                              <div class="vendor-entity">
+                                 <div class="vendor-entity-label">
+                                    <p>Days Of Operation</p>
+                                 </div>
+                                 <div class="vendor-entity-value">
+                                    <p>Mon Tue Fri Sun</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="list-group-item align-item">
+                     <a href="#">
+                        <div class="vendor-table">
+                           <div class="table-content">
+                              <div class="vendor-entity">
+                                 <div class="vendor-entity-label">
+                                    <p>Type</p>
+                                 </div>
+                                 <div class="vendor-entity-value">
+                                    <p> Office Cabs</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="list-group-item align-item">
+                     <a href="#">
+                        <div class="vendor-table">
+                           <div class=" row table-align-revise">
+                              <div class="col-md-6 col-xs-6 vendor-entity-label">
+                                 <p >Price</p>
+                              </div>
+                              <div class="col-md-6 col-xs-6 vendor-entity-label">
+                                 <p>Status</p>
+                              </div>
+                           </div>
+                           <div class=" row table-align-revise ">
+                              <div class="col-md-6 col-xs-6 vendor-entity-value">
+                                 <p >15000/-</p>
+                              </div>
+                              <div class="col-md-6 col-xs-6 vendor-entity-value">
+                                 <p>Processed</p>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="admin-footer" id="myFooter">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            Apply
+            </button>
+         </div>
+      </div>
+      <div class="admin-modal">
+         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h3 class="modal-title" id="exampleModalCenterTitle">Vendor's Detail</h3>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+                  <div class="modal-body">
+                     <div class="admin-modal-content">
+                        <form>
+                           <div class="form-group">
+                              <label for="exampleFormControlInput1">Name</label>
+                              <input type="Text" class="form-control"  placeholder="Name">
+                           </div>
+                           <div class="form-group">
+                              <label for="exampleFormControlInput1">Telephone no.</label>
+                              <input type="Text" class="form-control"  placeholder="Telephone no.">
+                           </div>
+                           <div class="form-group">
+                              <label for="exampleFormControlInput1">Email</label>
+                              <input type="Text" class="form-control"  placeholder="Email">
+                           </div>
+                           <div class="form-group">
+                              <label for="exampleFormControlInput1">Company Name</label>
+                              <input type="Text" class="form-control"  placeholder="Name">
+                           </div>
+                           <div class="form-group">
+                              <label for="exampleFormControlInput1">Company Address</label>
+                              <input type="Text" class="form-control"  placeholder="Name">
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                     <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+   </body>
+</html>

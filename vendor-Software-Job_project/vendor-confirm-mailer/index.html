@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <!--    <link rel="stylesheet" type="text/css" href="css/style.css">-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            width: auto;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-border {
+            height: 5px;
+            background-color: rgba(246, 70, 90, 1);
+        }
+
+        .header {
+            height: 85px;
+            display: table-cell;
+            vertical-align: middle;
+            background-color: rgba(250, 250, 250, 1);
+            width: 600px;
+        }
+
+        .header img {
+            height: 28px;
+            width: 112px;
+            text-align: left;
+            margin-left: 21px;
+        }
+
+        .welcome-page {
+            background-image: url(https://res.cloudinary.com/dty0eosa7/image/upload/v1531898859/bus.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 300px;
+        }
+
+        .welcome-heading {
+            font-family: 'Arial';
+            font-size: 36px;
+            color: rgba(255, 255, 255, 1);
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        .welcome-content {
+            font-family: 'Arial';
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            line-height: 28px;
+        }
+
+        .advantages-logo img {
+            height: 64px;
+            width: 64px;
+        }
+
+        .advantages-heading {
+            font-family: 'Arial';
+            font-size: 16px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            line-height: 22px;
+            margin-top: 25px;
+        }
+
+        .advantages-brief {
+            font-family: 'Arial';
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.5);
+            line-height: 22px;
+            margin-top: 14px;
+            padding: 0 8px;
+        }
+
+        .background {
+            background-image: url(https://res.cloudinary.com/dty0eosa7/image/upload/v1531900967/backgrounnd.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            min-height: 184px;
+        }
+
+        .advantages {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 42px 0px;
+        }
+
+        .advantages-content {
+            text-align: center;
+            width: 160px;
+        }
+
+        .outer-div {
+            background-color: rgba(0, 173, 183, 0.15);
+            padding: 42px;
+        }
+
+        .inner-div {
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .start-heading {
+            font-family: 'Arial';
+            font-size: 24px;
+            color: rgba(0, 173, 183, 1);
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .start-sub-heading {
+            font-family: 'Arial';
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.5);
+            text-align: left;
+            max-width: 372px;
+            line-height: 22px;
+        }
+
+        .serial img {
+            height: 196px;
+            width: 28px;
+        }
+
+        .how-to {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .steps-heading {
+            font-family: 'Arial';
+            font-size: 16px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.8);
+            line-height: 22px;
+        }
+
+        .steps-content {
+            font-family: 'Arial';
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.5);
+            line-height: 22px;
+        }
+
+        .inner-div {
+            padding: 30px 40px;
+        }
+
+        .start-content {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .last {
+            margin-bottom: 0px !important;
+        }
+
+        .background img {
+            height: 184px;
+            width: 600px;
+        }
+
+        .contact-info {
+            font-family: 'Arial';
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            line-height: 24px;
+            font-weight: 600;
+        }
+
+        .contact-no {
+            width: 249px;
+            line-height: 52px;
+            background-color: rgba(246, 70, 90, 1);
+            border-radius: 4px;
+            margin: auto;
+            margin-top: 16px;
+            text-align: center;
+        }
+
+        .contact-logo img {
+            height: 18px;
+            width: 18px;
+        }
+
+        .contact-logo {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            padding-top: 5px;
+        }
+
+        .call-back {
+            font-family: 'Arial';
+            font-size: 20px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 1);
+            position: relative;
+            display: inline-block;
+            margin-left: 20px;
+            vertical-align: middle;
+        }
+
+        .happy-message {
+            font-family: 'Arial';
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            line-height: 28px;
+            margin-top: 60px;
+            font-weight: 700;
+        }
+
+        .contact {
+            margin-top: 56px;
+        }
+
+        .social-logo img {
+            height: 20px;
+        }
+
+        .social-logo {
+            height: 48px;
+            width: 48px;
+            background-color: rgba(0, 173, 183, 1);
+            border-radius: 48px;
+            position: relative;
+            display: inline-block;
+            margin: 0px 5px;
+            line-height: 54px;
+        }
+
+        .social-media {
+            text-align: center;
+
+        }
+
+        .address {
+            width: 260px;
+            margin: auto;
+            font-family: 'Arial';
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            line-height: 20px;
+            margin-top: 32px;
+            padding-bottom: 20px;
+        }
+
+        hr.sep {
+            margin: 20px 0px;
+            border: 0;
+            border-top: 1px solid rgba(224, 224, 224, 1) !important;
+        }
+
+        hr.seperate {
+            border: 0;
+            border-top: 1px solid rgba(224, 224, 224, 1) !important;
+            max-width: 520px;
+            margin: 42px auto;
+        }
+
+        hr.seperator {
+            border: 0;
+            border-top: 1px solid rgba(224, 224, 224, 1) !important;
+            max-width: 520px;
+            margin: 24px auto;
+        }
+
+        .advantages-logo {
+            width: 160px;
+            height: 68px;
+            display: table-cell;
+            vertical-align: bottom;
+        }
+
+        .logo-2 img {
+            height: 51px;
+            width: 44px;
+        }
+
+        .logo-3 img {
+            width: 42px;
+            height: 42px;
+        }
+
+        .copyright {
+            font-family: 'Arial';
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            line-height: 20px;
+            padding-bottom: 66px;
+        }
+
+        .stay-connect {
+            font-family: 'Arial';
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            line-height: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        @media screen and (min-width: 420px) and (max-width: 550px) {
+            .background {
+                min-height: 160px;
+            }
+        }
+
+        @media screen and (min-width: 350px) and (max-width: 419px) {
+            .background {
+                min-height: 125px;
+            }
+        }
+
+        @media screen and (min-width: 310px) and (max-width: 349px) {
+            .background {
+                min-height: 100px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-border"></div>
+        <div class="header">
+            <img src="https://res.cloudinary.com/dty0eosa7/image/upload/v1531899050/shuttl-full.png">
+        </div>
+        <div class="welcome-page">
+            <div class="welcome-heading">
+                <p>Welcome</p>
+            </div>
+            <div class="welcome-content">
+                <p>Join the Movement</p>
+            </div>
+        </div>
+        <div class="advantages">
+            <div class="advantages-content">
+                <div class="advantages-logo">
+                    <img src="https://res.cloudinary.com/dty0eosa7/image/upload/v1531900962/plant.png">
+                </div>
+                <div class="advantages-heading">
+                    <p> Enviroment Friendly </p>
+                </div>
+                <div class="advantages-brief">
+                    <p> Our CNG fleet<br> helps reduce CO2 <br> emissions </p>
+                </div>
+            </div>
+            <div class="advantages-content">
+                <div class="advantages-logo logo-2">
+                    <img src="https://res.cloudinary.com/dty0eosa7/image/upload/v1531900962/shape.png">
+                </div>
+                <div class="advantages-heading">
+                    <p> Safety First </p>
+                </div>
+                <div class="advantages-brief">
+                    <p> We provide safest<br> commuting<br> experience </p>
+                </div>
+            </div>
+            <div class="advantages-content">
+                <div class="advantages-logo logo-3">
+                    <img src="https://res.cloudinary.com/dty0eosa7/image/upload/v1531900962/road.png">
+                </div>
+                <div class="advantages-heading">
+                    <p> Reduces Traffic </p>
+                </div>
+                <div class="advantages-brief">
+                    <p> We take cars off<br> the road & reduce <br>traffic </p>
+                </div>
+            </div>
+        </div>
+        <div class="outer-div">
+            <div class="inner-div">
+                <div class="start-heading">
+                    <p>
+                        Welcome
+                    </p>
+                </div>
+                <div class="start-sub-heading">
+                    <p>
+                        We would like to welcome you as our vendor for the Summer Spring project at Shuttl. We value our relationship with our vendors. We select vendors based on their suitability for our company profile and products. We will be providing you with details regarding the procedures and policies for all our vendors.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="background">
+            <!--           <img src="images/backgrounnd.png" alt="">-->
+        </div>
+        <div class="contact">
+            <div class="contact-info">
+                <p> For any assistance or help, Please call (Mon - Fri, 9:30am to 6:30pm) </p>
+            </div>
+            <div class="contact-no">
+                <div class="contact-logo">
+                    <img src="https://res.cloudinary.com/dty0eosa7/image/upload/v1531899146/call.png" alt="">
+                </div>
+                <div class="call-back">
+                    <p> +91 1800 111 222 </p>
+                </div>
+            </div>
+
+        </div>
+        <hr class="seperate">
+        <div class="last-page">
+            <div class="stay-connect">
+                <p> Stay Connected </p>
+            </div>
+            <div class="social-media">
+                <div class="social-logo facebook">
+                    <img src="https://res.cloudinary.com/dty0eosa7/image/upload/v1531899146/facebook.png" alt="">
+                </div>
+                <div class="social-logo twitter">
+                    <img src="https://res.cloudinary.com/dty0eosa7/image/upload/v1531899146/twitter.png" alt="">
+                </div>
+                <div class="social-logo linkedin">
+                    <img src="https://res.cloudinary.com/dty0eosa7/image/upload/v1531899146/linkedin.png" alt="">
+                </div>
+                <div class="social-logo insta">
+                    <img src="https://res.cloudinary.com/dty0eosa7/image/upload/v1531899146/insta.png" alt="">
+                </div>
+            </div>
+            <div class="happy-message">
+                <p> Happy Shuttling! </p>
+            </div>
+            <hr class="seperator">
+            <div class="address">
+                <p> Super Highway Labs Private Ltd. 620, Tower B3, Spaze iTech Park, Sector 49, Sohna Road, Gurgaon 122018 </p>
+            </div>
+            <div class="copyright">
+                <p> STC - AAVCS6334FSD001 </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

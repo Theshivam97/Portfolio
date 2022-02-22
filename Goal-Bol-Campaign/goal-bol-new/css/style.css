@@ -1,0 +1,258 @@
+* {
+    margin: 0px;
+}
+
+.container {
+    background-color: #f2f3f5;
+    overflow: auto;
+    padding: 40px 18px 0px 24px;
+    height: 100vh;
+
+}
+
+.header {
+    background-image: linear-gradient(279deg, #00adb7, #15ceab);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start
+}
+
+.left-arrow i {
+    color: #ffffff;
+    width: 14px;
+    height: 14px;
+    line-height: 60px;
+}
+
+.header-headline p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    line-height: 60px;
+}
+
+.heading p {
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4a4a4a;
+
+}
+
+.sub-heading p {
+    opacity: 0.4;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: 0.3px;
+    color: #000000;
+
+}
+
+.info-msg {
+    border-radius: 4px;
+    background-color: rgba(255, 191, 50, 0.2);
+    border: solid 1px #ffbf32;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.msg-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.info-msg-content p {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+
+
+    letter-spacing: 0.3px;
+    color: #f8a540;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+
+
+.current-date p {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #a5a5a5;
+}
+
+.card {
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+    padding-top: 32px;
+    margin-bottom: 22px;
+}
+
+.match-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.country-flag {
+    width: 36px;
+    height: 24px;
+    border: 1px solid #333;
+    margin: auto;
+}
+
+.country-name {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4a4a4a;
+    margin-top: 8px;
+}
+
+.versus {
+    opacity: 0.4;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #a1a1a1;
+    margin-top: 15px;
+}
+
+.final-score {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 32px;
+    padding: 0px 20px;
+
+}
+
+.final-score-heading {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 50px;
+    ;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.final-goals p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 50px;
+    letter-spacing: normal;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.predicted-score {
+    background-color: #ccf2e6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+
+}
+
+.predicted-score-heading {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 50px;
+
+    letter-spacing: normal;
+    color: #00bc81;
+}
+
+.predictes-goals p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 50px;
+    letter-spacing: normal;
+    text-align: right;
+    color: #00bc81;
+}
+
+.history {
+    border-left: 1px solid #dcdcde;
+    padding-left: 17px;
+    margin-left: 6px;
+}
+
+
+
+
+
+
+.left-arrow {
+    margin-left: 19px;
+}
+
+.header-headline {
+    margin-left: 22px;
+}
+
+.sub-heading {
+    margin-top: 6px;
+}
+
+.info-msg-content {
+    margin-left: 10px;
+}
+
+.current-date {
+    margin-left: 6px;
+    margin-top: 3px;
+}

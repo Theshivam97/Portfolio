@@ -1,0 +1,135 @@
+    *
+    {
+    	margin: 0px;
+    }
+    .clear
+    {
+    	clear: both;
+    }
+    .address input
+    {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 315px;
+        font-size: 16px;
+        color: rgba(0,0,0,0.87);
+    }
+   
+    .address
+    {
+        text-align: center;
+        margin-top: 80px;
+    }
+    .submit
+    {
+        text-align: right;
+        margin-top: 25px;
+    }
+    .block
+    {
+    	width: 360px;
+        margin: 0 auto;
+        border-left: 1px solid #d8d8d8;
+        border-right: 1px solid #d8d8d8;
+        border-bottom: 1px solid #d8d8d8;
+        border-top: 8px solid #d8d8d8;
+        margin-bottom: 90px;
+        padding-bottom: 20px;
+    }
+    .rectangle
+    {
+        width: 60px;
+        height: 8px;
+        background-image: linear-gradient(271deg, #00adb7, #15ceab);
+        position: absolute;
+        z-index: 1000;
+        margin-top: -8px;
+    }
+    .rectangle.medium
+    {
+    	width: 180px !important;
+    	
+    }
+    .rectangle.full
+    {
+    	width: 360px;
+    }
+    .icon
+    {
+        margin-top: 15px;
+        margin-left: 16px;
+        text-align: center;
+    }
+
+    .question
+    {
+    	font-family: Roboto;
+    	margin-top: 25px;
+    	text-align: center;
+        font-size: 23px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #4a4a4a;
+    }
+    .pick
+    {
+    	font-family: Roboto;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.29;
+        letter-spacing: 0.3px;
+        text-align: left;
+        color: #a3a3a3;
+        text-align: center;
+    }
+    .box
+    {
+    	height: 54px;
+    	width: 150px;
+        text-align: center;
+        border-radius: 4px;
+        background-color: #fcfcfc;
+        border: solid 1px #d6d6d6;
+        float: left;
+        margin-left: 20px;
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+    .box button
+    {
+        border: none;
+        background: none;
+    }
+    .box a
+    {
+        color:black;
+    }
+    .done
+    {
+    	background-color: #06b6b4cc;
+        border: 0;
+        text-align: center;
+        padding: 20px 120px;
+        color: #fff;
+        letter-spacing: 1px;
+        font-weight: 600;
+        border-radius: 50px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .last
+    {
+    	text-align: center;
+    	margin:20px;
+    }
+    .box:hover
+    {
+       background-color: #00adb7;
+       color: white;
+    }

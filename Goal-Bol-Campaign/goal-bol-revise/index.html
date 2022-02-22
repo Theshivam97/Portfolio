@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" type="text/css" href="css/style.css">
+	 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+
+	
+</head>
+<body>
+    
+    
+	<div class="container">
+
+		<div class="header">
+			<img src="images/goal-bol-banner.jpg">
+		</div>
+		<div class="content">
+			<div class="page-title">
+				<img src="images/bol-babu-bol.png">
+			</div>
+			<div class="user-ques">
+				<p>how many goals ?</p>
+			</div>
+			<div class="rules">
+				<div class="rules-content">
+					<div class="serial-no"><p>1</p></div>
+					<div class="rule-description">
+						<p>
+							 Predict the TOTAL number of goals you think<br> will get scored in a game
+						</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="rules-content">
+					<div class="serial-no"><p>2</p></div>
+					<div class="rule-description">
+						<p>
+							Submit your prediction before the game<br> starts
+						</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="rules-content">
+					<div class="serial-no"><p>3</p></div>
+					<div class="rule-description">
+						<p>
+							 If you are right, we will give you ₹25 in <br>Shuttl credits
+						</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="submit">
+				<button>Lets Play</button>
+			</div>
+			<div class="information">
+				<div class="know-rules">
+					<button id="myBtn" onclick="showrules()">KNOW THE RULES</button>
+					
+
+
+				</div>
+				
+				<div class="credits-use">
+					<button id="myBtn-2" onclick="showcredits()">HOW TO USE THE CREDITS</button>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+
+			<div id="myModal" class="modal" >
+			 <div class="modal-content">	
+				<div class="popup-rules">
+					<p>Know the Rules</p>
+				</div>
+				<div class="rules-content">
+				 <ul>
+			      <li>
+			        <span>You can predict goals for every & any match</span>
+			      </li>
+			      <li>
+			        <span>You can give only 1 prediction per match</span>
+			      </li>
+			      <li>
+			        <span>Make sure you send your entry before the match starts. If you send later, we will not consider it.</span>
+			      </li>
+			      <li>
+			        <span> If you win, Shuttl credits will get added within 24 hours</span>
+			      </li>
+			    </ul>
+				</div>
+				<div class="close-submit">
+					<a href="">CLOSE</a>
+				</div>
+			 </div>	
+			</div>
+             <div class="popup"  id="myPopup">
+			 <div class="popup-content">	
+			  <div class="popup-rules">
+			    <p>How to use Credits</p>
+			  </div>
+			  <div class="rules-content">
+			    <ul>
+			      <li>
+			        <span>You can use these credits to buy Shuttl pass. That's it.</span>
+			      </li>
+			      <li>
+			        <span>You can use no more than X credits in a one transaction</span>
+			      </li>
+			      <li>
+			        <span>Credits will expire if not used by XX date.</span>
+			      </li>
+			      
+			    </ul>
+			  </div>
+			  <div class="close-submit">
+			    <a href="">CLOSE</a>
+			  </div>
+			</div>
+			</div>
+
+    </div>
+
+
+
+
+	
+
+<script type="text/javascript">
+
+function showcredits(){
+   var modal = document.getElementById('myPopup');
+
+   
+var btn = document.getElementById("myBtn-2");
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+}
+
+
+
+function showrules(){
+
+	var modal = document.getElementById('myModal');
+
+var btn = document.getElementById("myBtn");
+
+btn.onclick = function() {
+    modal.style.display = "block";
+
+    
+
+}
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+ 
+</html>

@@ -1,0 +1,1480 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+    url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('../fonts/librebaskerville-regular-webfont.woff2') format('woff2'),
+    url('../fonts/librebaskerville-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*
+{
+	margin: 0px;
+}
+.clear
+{
+	clear: both;
+}
+
+.background-image
+{
+	background-image: url('../images/background.jpg');
+	background-size: 100%;
+	height: 855px;
+	background-repeat: no-repeat;
+
+}
+.first-page
+{
+	width: 95%;
+	margin: auto;
+}
+
+.title-name
+{
+	font-family: Lato;
+    color:  #ffffff;
+    font-size: 30px;/* Approximation due to font substitution */
+    font-weight: 600;
+    float: left;
+}
+.menu-option a
+{
+	font-family: Lato;
+    color:  #ffffff;
+    font-size: 16px;/* Approximation due to font substitution */
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 40px;
+}
+.menu-option
+{
+	float: right;
+	margin-left:2%;
+}
+.menu-option.border
+{
+	border-width: 1px;
+    border-color:  #ffffff;
+    border-style: solid;
+    padding-right: 11px;
+    border-radius: 25px;
+}
+.menu-option.border a
+{
+	margin-left: 8.5px;
+}
+
+.menu-option.bottom a
+{
+	border-bottom: 3px solid;
+	padding-bottom: 7px;
+}
+.menu
+{
+	padding-top: 3%;
+}
+.menu-option.responsive{
+    display: none;
+}
+.host
+{
+	font-family: Lato;
+    color:  #f3fdff;
+    font-size: 210%;/* Approximation due to font substitution */
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20%;
+}
+.playback
+{
+	font-family: Lato;
+    color:  #ffffff;
+    font-size: 400%;/* Approximation due to font substitution */
+    font-weight: 600;
+    text-align: center;
+}
+.options
+{
+	margin-left: 30%;
+}
+.option-artist a
+{
+	font-family: Lato;
+    color:  #ffffff;
+    font-size: 18px;/* Approximation due to font substitution */
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 56px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.option-agency a
+{
+	font-family: Lato;
+    color:  #ffffff;
+    font-size: 18px;/* Approximation due to font substitution */
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 56px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.option-artist
+{
+	float: left;
+	border-radius: 29px;
+    border-width: 1px;
+    border-color: #ffffff;
+    border-style: solid;
+    margin-right: 6%;
+
+}
+.option-agency
+{
+	float: left;
+	border-radius: 29px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #00adcc;
+    background-color: #00adcc;
+}
+.sign-6
+{
+	margin-left: 15px;
+}
+.second-page
+{
+	border-radius: 5px;
+    background-color:  rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 3px 19.2px 0.8px rgba(0, 0, 0, 0.07);
+    margin: auto;
+    width: 80%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: -14%;
+}
+.easy-way
+{
+	font-family: Lato;
+    color:  #333333;
+    font-size: 190%;/* Approximation due to font substitution */
+    font-weight: 500;
+    text-align: center;
+}
+.information-boxes
+{
+	border-radius: 5px;
+    background-color:  #f8f8f8;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    float: left;
+    width: 40.3%;
+    margin-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.user
+{
+	font-family: Lato;
+    color:  #00adcc;
+    font-size: 30px;/* Approximation due to font substitution */
+    font-weight: 600;
+    text-align: center;
+}
+.user-information
+{
+	font-family: Lato;
+    color:  #777777;
+    font-size: 20px;/* Approximation due to font substitution */
+    font-weight: 400;
+    text-align: center;
+}
+.giving-information
+{
+	margin-left: 13%;
+	margin-top: 3%;
+}
+.third-page
+{
+	margin: auto;
+	width: 80%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.member-box.responsive{
+    display: none;
+}
+.question
+{
+	border-radius: 5px;
+    background: linear-gradient(180deg, #00c3ff 0%, rgba(21, 180, 228, 0.96) 47%, rgba(44, 164, 199, 0.921569) 100%);
+    box-shadow: 0px 3px 19.2px 0.8px rgba(0, 0, 0, 0.07);
+    width: 39.9%;
+    height: 233px;
+    float: left;
+    position: relative;
+    padding-top: 50px;
+
+}
+.sign-1
+{
+	position: relative;
+    margin-left: 45%;
+	font-size: 50px;
+    text-align: center;
+    color: white;
+}
+.sign-1.down
+{
+	margin-top: 83px;
+}
+
+.question-sentence
+{
+	font-family: Lato;
+    color:  #ffffff;
+    font-size: 24px;/* Approximation due to font substitution */
+    font-weight: 400;
+    text-align: center;
+}
+.question-sentence.match
+{
+	margin-top: 30px;
+}
+.top
+{
+	margin-top: 20px;
+}
+.opportunity
+{
+	border-radius: 5px;
+    background-color:  #ffffff;
+    box-shadow: 0px 3px 19.2px 0.8px rgba(0, 0, 0, 0.07);
+    width: 66.1%;
+    float: right;
+    margin-top: -145px;
+
+}
+.icon-image.second img
+{
+	height: 83px;
+}
+.icon-image.second.another img
+{
+	height: 87px;
+}
+.opportunity-user
+{
+	margin-top: 88px;
+}
+.work
+{
+	font-family: Lato;
+    color:  #333333;
+    font-size: 20px;/* Approximation due to font substitution */
+    font-weight: 400;
+    text-align: center;
+    margin-top: 71px;
+}
+.sixth-page
+{
+	background-image: url('../images/background-1.jpg');
+	background-size: 100% ;
+	height:536px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 3px 19.2px 0.8px rgba(0, 0, 0, 0.07);
+    margin:auto;
+    width: 100%;
+    margin-top: 50px
+}
+.watch
+{
+	font-family: Lato;
+    color:  #ffffff;
+    font-size: 30px;/* Approximation due to font substitution */
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.video-description
+{
+	font-family: Lato;
+    color:  #ffffff;
+    font-size: 20px;/* Approximation due to font substitution */
+    font-weight: 400;
+    text-align: center;
+
+}
+.sign-5
+{
+	text-align: center;
+	font-size: 34px;
+	border-radius: 50%;
+    border-width: 3px;
+    border-color: #ffffff;
+    border-style: solid;
+    color: #ffffff;
+    padding:5px 10px;
+    margin-left: 48%;
+}
+.icon-image.first
+{
+	margin-left: 40px;
+}
+.icon-image.second
+{
+	margin-left: 60px;
+}
+.icon-image.third
+{
+	margin-left: 50px;
+}
+.icon-image.fourth
+{
+	margin-left: 60px;
+}
+.opportunity-title
+{
+	font-family: Lato;
+    color:  #333333;
+    font-size: 20px;/* Approximation due to font substitution */
+    font-weight: 400;
+    margin-top: 15px;
+}
+.opportunity-no
+{
+	border-radius: 50%;
+    background-color:  #19bbeb;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-family: Lato;
+    color:  #ffffff;
+    font-size: 20px;/* Approximation due to font substitution */
+    font-weight: 400;
+    margin-top: 15px;
+}
+.opportunity-no.first
+{
+	margin-left: 50px;
+}
+.opportunity-no.second
+{
+	margin-left: 75px;
+}
+.opportunity-no.third
+{
+	margin-left: 65px;
+}
+.opportunity-no.fourth
+{
+	margin-left: 80px;
+}
+.opportunity-given-1
+{
+	float: left;
+	margin-left: 130px;
+}
+.opportunity-given-2
+{
+	float: right;
+	margin-right: 100px;
+}
+.opportunity-given-2.short
+{
+	margin-right: 150px
+}
+.opportunity-no.short
+{
+	margin-left: 20px;
+}
+.opportunity.change
+{
+	float: left;
+}
+.question.change
+{
+	float: right;
+}
+.fourth-page
+{
+	width: 100%;
+	margin: auto;
+}
+.fifth-page
+{
+	width: 80%;
+	margin: auto;
+	margin-top: 50px;
+}
+.sign-8{
+    font-family: Librebaskerville;
+    color: #00c3ff;
+    font-size: 163px;
+    position: relative;
+    top: 80px;
+    margin-left: 6%;
+}
+.agency-comments
+{
+	border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background: linear-gradient(180deg, rgba(44, 164, 199, 0.921569) 0%, rgba(21, 180, 228, 0.96) 47%, #00c3ff 100%);
+    width: 50%;
+    height: 848px;
+    float: left;
+    position: relative;
+    z-index: -1;
+    padding-left: 30px
+}
+.sign-3
+{
+	font-family: LibreBaskerville;
+    color:  #17a2d4;
+    font-size: 300px;/* Approximation due to font substitution */
+    font-weight: 400;
+    text-align: center;
+}
+.agency-saying
+{
+	font-family: Lato;
+    color:  #ffffff;
+    font-size: 30px;/* Approximation due to font substitution */
+    font-weight: 600;
+    margin-top: 130px;
+}
+.agency-status
+{
+	font-family: Lato;
+    color:  #ffffff;
+    font-size: 22px;/* Approximation due to font substitution */
+    font-weight: 400;
+}
+.dot-top
+{
+	margin-top: 20px;
+}
+.dot
+{
+	border-radius: 50%;
+    border-width: 1px;
+    border-color:  #ffffff;
+    border-style: solid;
+    width: 8px;
+    height: 8px;
+    float: left;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+.dot.background
+{
+	background-color: #ffffff;
+}
+.sign-4
+{
+	font-family: Material;
+    color:  #ffffff;
+    font-size: 15px;/* Approximation due to font substitution */
+    float: left;
+    margin-left: 25px;
+}
+.member-comments
+{
+	float: right;
+	background-color:  #ffffff;
+	margin-top: -500px;
+
+}
+.member-box
+{
+	border-radius: 5px;
+    background-color:  #ffffff;
+    box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.06);
+    float: left;
+    padding: 25px 20px 40px 20px;
+    margin-right: 25px;
+}
+.member-box.half
+{
+	padding: 25px 0px 40px 20px;
+	margin-right: 0px;
+}
+.member-image
+{
+	float: left;
+}
+.member-credentials
+{
+	float: left;
+	margin-top: 15px;
+	margin-left: 25px;
+}
+.member-name
+{
+	font-family: Lato;
+    color:  #0893bc;
+    font-size: 18px;/* Approximation due to font substitution */
+    font-weight: 400;
+}
+.member-company
+{
+	font-family: Lato;
+    color:  #777777;
+    font-size: 14px;/* Approximation due to font substitution */
+    font-weight: 400;
+}
+.member-status p
+{
+	font-family: Lato;
+    color:  #777777;
+    font-size: 15px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 22px;
+}
+.upar
+{
+	padding-top: 180px;
+}
+.seventh-page
+{
+	margin: auto;
+	width: 100%;
+}
+.title-2
+{
+	font-family: Lato;
+    color:  #aaaaaa;
+    font-size: 34px;/* Approximation due to font substitution */
+    font-weight: 600;
+    line-height: 22px;
+    float: left;
+    margin-left: 94px;
+}
+.contact
+{
+	float: left;
+	margin-left: 356px;
+}
+.social-media
+{
+	border-radius: 50%;
+    border-width: 1px;
+    border-color:  #cccccc;
+    border-style: solid;
+    width: 37px;
+    font-family: Material;
+    color:  #cccccc;
+    font-size: 20px;/* Approximation due to font substitution */
+    line-height: 37px;/* Approximation due to font substitution */
+    text-align: center;
+    float: left;
+    margin-right: 20px;
+}
+.company-details
+{
+	float: right;
+}
+.information-company
+{
+	font-family: Lato;
+    color:  #8b8a8a;
+    font-size: 14px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 22px;
+    float: left;
+    margin-right: 50px;
+}
+.copyright
+{
+	font-family: Lato;
+    color:  #aaaaaa;
+    font-size: 14px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 22px;/* Approximation due to font substitution */
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.about-company
+{
+	margin-top: 101px;
+}
+@media screen  and (min-width: 770px) and (max-width: 1024px) {
+    .agency-saying{
+        margin-top: 70px !  ;
+    }
+    .first-page{
+        width: 90%;
+    }
+    .sign-8{
+        top: 40px;
+        font-size: 100px;
+    }
+    .user-information{
+        font-size: 17px;
+    }
+    .options{
+        margin-left: 25%;
+    }
+    .second-page{
+        margin-top: -32%;
+    }
+    .work{
+        font-size: 19px;
+    }
+    .opportunity-given-1{
+        margin-left: 40px;
+    }
+    .opportunity-given-2{
+        margin-right: 40px;
+    }
+    .opportunity-given-2.short{
+        margin-right: 122px;
+    }
+    .icon-image.second{
+        margin-left: 38px;
+    }
+    .sign-5{
+    
+    }
+    .about-company{
+        margin-top: 60px;
+    }
+    .title-2{
+        margin-left: 20px;
+    }
+    .contact{
+        margin-left: 280px;
+    }
+    .information-company{
+        margin-right: 30px;
+    }
+    .opportunity{
+        width: 64%;
+    }
+}
+@media screen and (min-width: 416px) and (max-width: 769px){
+    .menu-option a{
+        font-size: 14px;
+    }
+     .sign-8{
+        top: 20px;
+        font-size: 60px;
+    }
+
+    .title-name{
+        font-size: 28px;
+    }
+    .host{
+        margin-top: 12%;
+        font-size: 195%;
+    }
+    .playback{
+        font-size: 320%;
+    }
+    .option-artist a{
+        font-size: 17px;
+        line-height: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .option-agency a{
+        font-size: 17px;
+        line-height: 50px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .options{
+        margin-left: 20%;
+    }
+    .background-image{
+        height: 608px;
+    }
+    .easy-way{
+        font-size: 165%;
+    }
+    .user{
+        font-size: 23px;
+    }
+    .user-information{
+        font-size: 13px;
+    }
+    .second-page{
+        margin-top: -29%;
+    }
+    .sign-1{
+        margin-top: 50px;
+        font-size: 45px;
+    }
+    .question-sentence{
+        font-size: 20px;
+    }
+    .question{
+        height: 235px;
+    }
+    .work{
+        font-size: 17px;
+    }
+    .opportunity-given-1{
+        margin-left: 25px;
+    }
+    .opportunity-given-2{
+        margin-right: 3px;
+    }
+    .opportunity-title
+    {
+        font-size: 17px;
+    }
+    .icon-image.first{
+        margin-left: 30px;
+    }
+    .icon-image.second{
+        margin-left: 30px;
+    }
+    .agency-saying{
+        margin-top: 40px;
+        font-size: 28px;
+    }
+    .member-comments{
+        margin-top: -400px;
+    }
+    .agency-status{
+        font-size: 20px;
+    }
+    .member-box.half{
+        display: none;
+    }
+    .agency-comments{
+        height: 729px;
+    }
+    .member-box{
+        padding:15px 10px 23px 10px;
+        margin-right: 10px;
+    }
+    .opportunity-given-2.short{
+        margin-right: 65px;
+    }
+    .upar{
+        padding-top: 100px;
+    }
+    .sixth-page{
+        height: 440px;
+    }
+    .about-company{
+        margin-top: 50px;
+    }
+    .title-2{
+        margin-left: 75px;
+        font-size: 30px;
+    }
+    .information-company{
+        margin-right: 25px;
+    }
+    .contact{
+        display: none;
+    }
+
+}
+@media screen  and (max-width: 415px) and (min-width: 377px) {
+    .information-boxes{
+        width: 95%;
+        float: none;
+        margin-bottom: 25px;
+    }
+     .sign-8{
+        top: 20px;
+        font-size: 60px;
+    }
+    .member-box{
+        padding:25px 5px 40px 10px;
+        margin-right: 0px;
+        margin-left: 12px;
+        position: relative;
+        top: -100px;
+    }
+    .member-credentials{
+        margin-left: 14px;
+    }
+    .member-name{
+        font-size: 15px;
+    }
+    .member-company{
+        font-size: 11px;
+    }
+    .member-status p{
+        font-size: 13px;
+    }
+    .member-box.responsive{
+        display: block;
+    }
+    .member-box.no-responsive{
+        display: none;
+    }
+    .menu-option.responsive{
+        display: block;
+    }
+    .menu-option.border-2{
+    
+    border-width: 1px;
+    border-color:  #ffffff;
+    border-style: solid;
+    padding-right: 11px;
+    border-radius: 25px;
+    display: block;
+    }
+    .menu-option a{
+        line-height: 27px;
+    }
+    .menu-option.border-2 a{
+        margin-left: 7px;
+    }
+    .title-name{
+        font-size: 25px;
+    }
+    .third-page{
+        width: 90%;
+    }
+    .fifth-page{
+        width: 90%;
+    }
+    .work{
+        margin-top: 0px ;
+        padding-top: 150px;
+    }
+
+    .giving-information{
+        margin-left: 16.5px ;
+    }
+    .options{
+        margin-left: 50px;
+    }
+    .host{
+        margin-top: 20px;
+        font-size: 130%;
+    }
+    .playback{
+        font-size: 227%;
+    }
+    .option-artist a{
+        font-size: 13px;
+        line-height: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .option-agency a{
+        font-size: 13px;
+        line-height: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .easy-way{
+        font-size: 145%;
+    }
+    .user{
+        font-size: 25px;
+    }
+    .user-information{
+        font-size: 17px;
+    }
+    .option-artist{
+        margin-right: 12px;
+    }
+    .second-page{
+        margin-top: -470px;
+        padding-bottom: 20px;
+    }
+    .background-image{
+        background-size: 100%;
+        height: 679px ;
+    }
+    .question{
+        float: none !important;
+        width: 90% ;
+        margin:auto;
+    }
+    .sign-1{
+        margin-top: 0px ;
+        padding-top: 60px;
+    }
+    .opportunity-user{
+        margin-top: 0px ;
+    }
+    .opportunity{
+        float: none ;
+        width: 100% ;
+        margin-top: -90px ;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+    .opportunity-given-1{
+        float: none ;
+        margin-left:0px ; 
+        margin-top: 120px;
+    }
+    .opportunity-given-2{
+        float: none ;
+        margin-right: 0px !important ;
+        margin-top: 120px;
+    }
+    .icon-image.first{
+        margin: 0px ;
+    }
+    .icon-image.second{
+        margin-left: 0px ;
+    }
+    .icon-image.third{
+        margin-left: 0px ;
+    }
+    .icon-image.fourth{
+        margin-left: 0px ;
+    }
+    .opportunity-no.first{
+        margin: auto;
+    }
+    .opportunity-no.second{
+        margin: auto ;
+    }
+    .opportunity-no.third{
+        margin: auto ;
+    }
+    .opportunity-no.fourth{
+        margin:auto;
+    }
+    .opportunity-no.short{
+        margin:auto ;
+    }
+    .agency-comments{
+        float: none ;
+        width: 100%;
+        height: 360px ;
+        padding-left: 0px;
+    }
+    .member-comments{
+        margin-top: 0px ;
+        float: none ;
+    }
+    .upar{
+        padding-top: 53px ;
+    }
+    .sign-5{
+       
+    }
+    .watch{
+        font-size: 27px;
+        margin-bottom: 6px;
+    }
+    .video-description{
+        font-size: 16px;
+    }
+    .contact{
+        display: none;
+    }
+    .title-2{
+        float: none ;
+        margin-left: 0px ;
+        text-align: center;
+    }
+    .sixth-page{
+        height: 231px ;
+    }
+    .company-details{
+        float: none ;
+        margin-left: 55px ;
+        margin-top: 15px;
+    }
+    .menu-option{
+        display: none;
+    }
+    .member-box.half{
+        display: none;
+    }
+    .agency-saying{
+        margin-top: 35px ;
+    }
+    .about-company{
+        margin-top: 37px ;
+    }
+    .information-company{
+        margin-right: 25px;
+    }
+    .copyright{
+        margin-top: 25px;
+    }
+}
+@media screen  and (max-width: 376px) and (min-width: 325px) {
+    .information-boxes{
+        width: 95%;
+        float: none;
+        margin-bottom: 25px;
+    }
+     .sign-8{
+        top: 20px;
+        font-size: 60px;
+    }
+     .member-box{
+        padding:25px 5px 40px 10px;
+        margin-right: 0px;
+        margin-left: 13px;
+        position: relative;
+        top: -100px;
+    }
+    .member-credentials{
+        margin-left: 14px;
+    }
+    .member-name{
+        font-size: 15px;
+    }
+    .member-company{
+        font-size: 11px;
+    }
+    .member-status p{
+        font-size: 11px;
+    }
+    .member-box.responsive{
+        display: block;
+    }
+    .member-box.no-responsive{
+        display: none;
+    }
+    .menu-option.responsive{
+        display: block;
+    }
+    .menu-option.border-2{
+    
+    border-width: 1px;
+    border-color:  #ffffff;
+    border-style: solid;
+    padding-right: 11px;
+    border-radius: 25px;
+    display: block;
+    }
+    .menu-option a{
+        line-height: 27px;
+    }
+    .menu-option.border-2 a{
+        margin-left: 7px;
+    }
+    .title-name{
+        font-size: 25px;
+    }
+    .third-page{
+        width: 90%;
+    }
+    .fifth-page{
+        width: 90%;
+    }
+    .work{
+        margin-top: 0px   ;
+        padding-top: 150px;
+    }
+
+    .giving-information{
+        margin-left: 16.5px   ;
+    }
+    .options{
+        margin-left: 30px;
+    }
+    .host{
+        margin-top: 20px;
+        font-size: 130%;
+    }
+    .playback{
+        font-size: 227%;
+    }
+    .option-artist a{
+        font-size: 13px;
+        line-height: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .option-agency a{
+        font-size: 13px;
+        line-height: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .easy-way{
+        font-size: 145%;
+    }
+    .user{
+        font-size: 20px;
+    }
+    .user-information{
+        font-size: 15px;
+    }
+    .option-artist{
+        margin-right: 12px;
+    }
+    .second-page{
+        margin-top: -470px;
+        padding-bottom: 20px;
+    }
+    .background-image{
+        background-size: 100%;
+        height: 679px  ;
+    }
+    .question{
+        float: none !important ;
+        width: 90%   ;
+        margin:auto;
+    }
+    .sign-1{
+        margin-top: 0px  ;
+        padding-top: 60px;
+    }
+    .opportunity-user{
+        margin-top: 0px   ;
+    }
+    .opportunity{
+        float: none  ;
+        width: 100%   ;
+        margin-top: -90px   ;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+    .opportunity-given-1{
+        float: none  ;
+        margin-left:0px   ; 
+        margin-top: 120px;
+    }
+    .opportunity-given-2{
+        float: none   ;
+        margin-right: 0px !important  ;
+        margin-top: 120px;
+    }
+    .icon-image.first{
+        margin: 0px   ;
+    }
+    .icon-image.second{
+        margin-left: 0px   ;
+    }
+    .icon-image.third{
+        margin-left: 0px   ;
+    }
+    .icon-image.fourth{
+        margin-left: 0px   ;
+    }
+    .opportunity-no.first{
+        margin: auto  ;
+    }
+    .opportunity-no.second{
+        margin: auto   ;
+    }
+    .opportunity-no.third{
+        margin: auto   ;
+    }
+    .opportunity-no.fourth{
+        margin:auto   ;
+    }
+    .opportunity-no.short{
+        margin:auto   ;
+    }
+    .agency-comments{
+        float: none   ;
+        width: 100%   ;
+        height: 360px   ;
+        padding-left: 0px;
+    }
+    .member-comments{
+        margin-top: 0px   ;
+        float: none  ;
+    }
+    .upar{
+        padding-top: 35px   ;
+    }
+    .sign-5{
+       
+    }
+    .watch{
+        font-size: 27px;
+        margin-bottom: 6px;
+    }
+    .video-description{
+        font-size: 16px;
+    }
+    .contact{
+        display: none;
+    }
+    .title-2{
+        float: none ;
+        margin-left: 0px ;
+        text-align: center;
+        font-size: 30px;
+    }
+    .sixth-page{
+        height: 208px ;
+    }
+    .company-details{
+        float: none  ;
+        margin-left: 25px   ;
+        margin-top: 15px;
+    }
+    .menu-option{
+        display: none;
+    }
+    .member-box.half{
+        display: none;
+    }
+    .agency-saying{
+        margin-top: 35px   ;
+    }
+    .about-company{
+        margin-top: 30px   ;
+    }
+    .information-company{
+        margin-right: 25px;
+    }
+    .copyright{
+        margin-top: 15px;
+    }
+}
+@media screen  and (max-width: 324px) and (min-width: 315px) {
+    .information-boxes{
+        width: 95%;
+        float: none;
+        margin-bottom: 25px;
+    }
+     .sign-8{
+        top: 20px;
+        font-size: 60px;
+    }
+     .member-box{
+        padding:25px 5px 40px 10px;
+        margin-right: 0px;
+        margin-left: 9px;
+        position: relative;
+        top: -100px;
+    }
+    .member-credentials{
+        margin-left: 5px;
+    }
+    .member-name{
+        font-size: 14px   ;
+    }
+    .member-company{
+        font-size: 10px   ;
+    }
+    .member-status p{
+        font-size: 9px !important  ;
+    }
+    .member-box.responsive{
+        display: block;
+    }
+    .member-box.no-responsive{
+        display: none;
+    }
+    .menu-option.responsive{
+        display: block;
+    }
+    .menu-option.border-2{
+    
+    border-width: 1px;
+    border-color:  #ffffff;
+    border-style: solid;
+    padding-right: 11px;
+    border-radius: 25px;
+    display: block;
+    }
+    .menu-option a{
+        line-height: 27px;
+    }
+    .menu-option.border-2 a{
+        margin-left: 7px;
+    }
+    .title-name{
+        font-size: 20px;
+    }
+    .third-page{
+        width: 90%;
+    }
+    .fifth-page{
+        width: 90%;
+    }
+    .work{
+        margin-top: 0px   ;
+        padding-top: 130px;
+    }
+
+    .giving-information{
+        margin-left: 16.5px  ;
+    }
+    .options{
+        margin-left: 50px;
+    }
+    .host{
+        margin-top: 10px;
+        font-size: 115%;
+    }
+    .playback{
+        font-size: 185%;
+    }
+    .option-artist a{
+        font-size: 10px;
+        line-height: 25px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .option-agency a{
+        font-size: 10px;
+        line-height: 25px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .easy-way{
+        font-size: 130%;
+    }
+    .user{
+        font-size: 20px;
+    }
+    .user-information{
+        font-size: 12px;
+    }
+    .option-artist{
+        margin-right: 12px;
+    }
+    .second-page{
+        margin-top: -510px;
+        padding-bottom: 20px;
+    }
+    .background-image{
+        background-size: 100%;
+        height: 679px ;
+    }
+    .question{
+        float: none !important ;
+        width: 90%   ;
+        margin:auto;
+        height: 250px;
+    }
+    .question-sentence{
+        font-size: 20px;
+    }
+    .sign-1{
+        margin-top: 0px  ;
+        padding-top: 40px;
+    }
+    .opportunity-user{
+        margin-top: 0px   ;
+    }
+    .opportunity{
+        float: none  ;
+        width: 100%   ;
+        margin-top: -90px ;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+    .opportunity-given-1{
+        float: none ;
+        margin-left:0px ; 
+        margin-top: 120px;
+    }
+    .opportunity-given-2{
+        float: none ;
+        margin-right: 0px !important ;
+        margin-top: 120px;
+    }
+    .icon-image.first{
+        margin: 0px  ;
+    }
+    .icon-image.second{
+        margin-left: 0px ;
+    }
+    .icon-image.third{
+        margin-left: 0px   ;
+    }
+    .icon-image.fourth{
+        margin-left: 0px   ;
+    }
+    .opportunity-no.first{
+        margin: auto ;
+    }
+    .opportunity-no.second{
+        margin: auto   ;
+    }
+    .opportunity-no.third{
+        margin: auto   ;
+    }
+    .opportunity-no.fourth{
+        margin:auto   ;
+    }
+    .opportunity-no.short{
+        margin:auto   ;
+    }
+    .agency-comments{
+        float: none   ;
+        width: 100%   ;
+        height: 360px   ;
+        padding-left: 0px;
+    }
+    .member-name{
+        font-size: 16px;
+    }
+    .member-company{
+        font-size: 12px;
+    }
+    .member-status p{
+        font-size: 11px;
+    }
+    .member-comments{
+        margin-top: 0px   ;
+        float: none ;
+    }
+    .upar{
+        padding-top: 27px  ;
+    }
+    .sign-5{
+       
+    }
+    .watch{
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+    .video-description{
+        font-size: 13px;
+    }
+    .contact{
+        display: none;
+    }
+    .title-2{
+        float: none ;
+        margin-left: 0px ;
+        text-align: center;
+        font-size: 30px;
+    }
+    .sixth-page{
+        height: 178px ;
+    }
+    .company-details{
+        float: none   ;
+        margin-left: 10px  ;
+        margin-top: 15px;
+    }
+    .menu-option{
+        display: none;
+    }
+    .member-box.half{
+        display: none;
+    }
+    .agency-saying{
+        margin-top: 0px   ;
+        font-size: 23px;
+        padding-top: 50px;
+    }
+    .agency-status{
+        font-size: 18px;
+    }
+    .about-company{
+        margin-top: 25px   ;
+    }
+    .information-company{
+        margin-right: 14px;
+    }
+    .copyright{
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,152 @@
+*{
+    margin:0px;
+}
+
+.shuttl-headline{
+
+    font-size: 26px;
+    padding-top: 10px;
+}
+
+.shuttl-header img{
+width: 112px;
+}
+
+.header-border{
+    height: 5px;
+    background-color: rgba(246,70,90,1);
+}
+.shuttl-header{
+    height: 82px;
+    width: auto;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    display: flex;
+    padding: 0px 15px;
+    align-items: center;
+    background-color: rgba(250, 250, 250, 1);
+}
+
+
+
+.list-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+.job-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.align-list{
+    margin-top: 20px;
+    padding:10px 0px !important;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.first-part{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+.last-part{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+a{
+    text-decoration: none !important;
+    color:#333 !important;
+}
+.vendor-page{
+    padding: 0px !important;
+}
+.content{
+    padding: 0px 15px;
+}
+.submit-value{
+    background-color: #f0ad4e;
+    color: #fff;
+    padding: 0px 5px;
+}
+.price-value{
+    font-weight: 1000;
+    color: #333;
+    font-size: 16px;
+}
+.job-id-label{
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #95a5a6;
+}
+.job-id-value{
+    color: #969696;
+}
+.job-type-label{
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #95a5a6;
+}
+.job-type-value{
+    color: #969696;
+}
+.route-label{
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #95a5a6;
+}
+.route-value{
+    color:#969696;
+}
+.price-label{
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #95a5a6;
+}
+.submit-label{
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #95a5a6;
+}
+.view{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.form-admin-inline{
+   
+}
+
+@media screen and  (max-width: 550px) {
+   
+   .shuttl-header{
+    display: block;
+    text-align: center;
+   }
+   .shuttl-logo{
+    padding-top: 8px;
+   }
+   .first-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    width: auto;
+   }
+   .last-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    width: auto;
+   }
+   .list-content{
+    display: block;
+   }
+   
+   .sep{
+    margin: 10px 0px !important;
+   }
+   
+}

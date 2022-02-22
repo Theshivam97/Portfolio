@@ -1,0 +1,62 @@
+*{
+	margin:0px;
+}
+.container-fluid{
+	padding: 0px !important;
+}
+.row{
+	margin: 0px !important;
+}
+.header{
+	text-align: center;
+	font-size: 22px;
+	padding-top: 20px;
+}
+.sep{
+	margin: 10px !important;
+}
+.second-page{
+	max-width: 700px;
+	width: auto;
+	margin: auto;
+}
+.modale-admin-content
+{
+	padding: 50px;
+}
+.second-page-header{
+	padding: 0px 50px;
+}
+.second-page-footer{
+	padding: 0px 50px;
+}
+.second-page-submit{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.third-page{
+	max-width: 700px;
+	width:auto;
+	margin: auto;
+}
+.third-page-header{
+	padding: 0px 50px;
+}
+.third-page-content{
+	padding: 30px 50px;
+}
+.vendor-info-label{
+	font-weight: 700;
+}
+.submit-page-button
+{
+	margin-right: 20px;
+}
+#save{
+	display: none;
+}
+#cancel{
+	display: none;
+}

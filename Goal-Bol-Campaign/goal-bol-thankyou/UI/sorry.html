@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Diwali Offer | Shuttl</title>
+    <script type="application/javascript" src="../UI/js/jquery-3.2.1.min.js"></script>
+    <script type="application/javascript" src="../UI/js/thank-you.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="http://v.fastcdn.co/u/cf28cb64/11964683-0-favicon.ico" type="image/x-ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link href="../UI/css/shuttl-lib.css" rel="stylesheet">
+    <link href="../UI/css/style.css" rel="stylesheet">
+</head>
+
+<style>
+    #thankYouPage {
+        background: white;
+        color: white;
+    }
+    
+    button#thankYouBtn {
+        background-color: rgba(0, 173, 183, 1);
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+    
+    h2 {
+        font-size: 34px;
+        font-weight: 300;
+        color: rgba(246, 70, 88, 1);
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 16px;
+        color: rgba(163, 163, 163, 1);
+        text-align: center;
+        letter-spacing: 0.01em;
+        line-height: 20px;
+        padding: 0 30px;
+    }
+
+</style>
+
+<body>
+    <div id="thankYouPage">
+        <div id="centerThanks">
+            <img class="center mc" src="../UI/res/failure_icon.svg" alt="">
+            <h2 class="center">Sending failed</h2>
+            <p class="center">We were not able to save your predictions. Requesting you to please try again.</p>
+        </div>
+        <!--We may need to add query parameter in this url-->
+        <a href="silver.html"><button class="button-large center mc" id="thankYouBtn" class='tryAgainBtn'>Try again</button></a>
+    </div>
+</body>
+
+</html>

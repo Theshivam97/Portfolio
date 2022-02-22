@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>success_tick</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Diwali" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="08_Payment-Success" transform="translate(-140.000000, -212.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="Group" transform="translate(0.000000, 48.000000)">
+                <path d="M180,244 C157.9,244 140,226.1 140,204 C140,181.9 157.9,164 180,164 C202.1,164 220,181.9 220,204 C220,226.1 202.1,244 180,244 Z M201.8,188.5 C200.6,187.3 198.6,187.3 197.4,188.5 L173.4,212.8 L162.5,201.8 C161.3,200.6 159.3,200.6 158.1,201.8 C157,203 157,205 158.2,206.2 L171.3,219.4 C172.5,220.6 174.5,220.6 175.7,219.4 L201.8,193 C203,191.7 203,189.8 201.8,188.5 Z" id="success_tick"></path>
+            </g>
+        </g>
+    </g>
+</svg>

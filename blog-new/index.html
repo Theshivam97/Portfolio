@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+       	<title></title>
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
+    	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    	<link href="css/bootstrap.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+		    if (this.hash !== "") {
+		      event.preventDefault();
+		      var hash = this.hash;
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		        window.location.hash = hash;
+		      });
+		    }
+		  });
+		});
+		</script>
+         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+      <script> 
+            function initialize()
+                {
+                    var input = document.getElementById('location');
+                    var autocomplete = new google.maps.places.Autocomplete(
+                            (input),
+                            {
+                                types: ['(cities)'],
+                            });
+                    google.maps.event.addListener(autocomplete, 'place_changed', function() {
+                        var place = autocomplete.getPlace();
+                        if (!place.geometry) {
+                            return;
+                        }
+                        var address = '';
+                        if (place.address_components)
+                        {
+                            address = [
+                                (place.address_components[0] && place.address_components[0].short_name || ''),
+                                (place.address_components[1] && place.address_components[1].short_name || ''),
+                                (place.address_components[2] && place.address_components[2].short_name || '')
+                            ].join(' ');
+                        }
+                        LoadEventCategory();
+                        LoadYelpData();
+                    });
+                }
+                google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+      <script> 
+            function initialize()
+                {
+                    var input = document.getElementById('work-location');
+                    var autocomplete = new google.maps.places.Autocomplete(
+                            (input),
+                            {
+                                types: ['(cities)'],
+                            });
+                    google.maps.event.addListener(autocomplete, 'place_changed', function() {
+                        var place = autocomplete.getPlace();
+                        if (!place.geometry) {
+                            return;
+                        }
+
+                        var address = '';
+                        if (place.address_components)
+                        {
+                            address = [
+                                (place.address_components[0] && place.address_components[0].short_name || ''),
+                                (place.address_components[1] && place.address_components[1].short_name || ''),
+                                (place.address_components[2] && place.address_components[2].short_name || '')
+                            ].join(' ');
+                        }
+                        LoadEventCategory();
+                        LoadYelpData();
+                    });
+                }
+
+                google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+     
+    </head>
+    <body>
+    	<div class="container">
+    			<div class="col-lg-12">
+    				<div class="row">
+    					<div class="block">
+    						<div class="rectangle medium"></div>
+    						<div class="heading">
+    							<div class="icon">
+    								<img src="images/home-icon.png" alt="metro">
+    							</div>
+    							<div class="main">
+    								<div class="question">
+    									<p>Where do you live</p>
+    								</div>
+    								<div class="pick">
+    									<p>
+    										Tell us your home address
+    									</p>
+    								</div>
+    							</div>
+    						</div>
+                            <div class="address">
+                                <input type="text" id="location" onfocus="geolocate()" name="your address" placeholder="Your home address">
+                            </div>
+                            <div class="submit">
+                                <a href="#fourth-page">
+                                    <img src="images/fab-proceed.png">
+                                </a>
+                            </div>
+    						
+    						
+    					</div>
+    				</div>
+    			</div>
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="block" id="fourth-page">
+                            <div class="rectangle full"></div>
+                            <div class="heading">
+                                <div class="icon">
+                                    <img src="images/work-icon.png" alt="metro">
+                                </div>
+                                <div class="main">
+                                    <div class="question">
+                                        <p>Where do you work</p>
+                                    </div>
+                                    <div class="pick">
+                                        <p>
+                                            Tell us your office address
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="address">
+                                <input type="text" id="work-location" onfocus="geolocate()" name="your address" placeholder="Your work address">
+                            </div>
+                             <div class="submit">
+                                <a href="#fifth-page">
+                                    <img src="images/fab-proceed.png">
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="block" id="fifth-page">
+                            <div class="rectangle"></div>
+                            <div class="heading">
+                                <div class="icon">
+                                    <img src="images/metro-icon.png" alt="metro">
+                                </div>
+                                <div class="main">
+                                    <div class="question">
+                                        <p>Previous mode of commute</p>
+                                    </div>
+                                    <div class="pick">
+                                        <p>
+                                            Select the one which you use the most
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="choose">
+                                    <div class="box">
+                                        <a href="#second-block" ><button">App based cab<br>service</button></a>
+                                    </div>
+                                    <div class="box" >
+                                        <a href="#second-block"><button>Bike</button></a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="choose">
+                                    <div class="box">
+                                        <a href="#second-block"><button>Bus</button></a>
+                                    </div>
+                                    <div class="box">
+                                        <a href="#second-block"><button>Car pool with<br>friend</button></a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="choose">
+                                    <div class="box">
+                                        <a href="#second-block"><button>Car pool with<br>strangers</button></a>
+                                    </div>
+                                    <div class="box">
+                                        <a href="#second-block"><button>Drive my car</button></a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="choose">
+                                    <div class="box">
+                                        <a href="#second-block"><button>Metro</button></a>
+                                    </div>
+                                    <div class="box">
+                                        <a href="#second-block"><button>Office cab</button></a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="choose">
+                                    <div class="box">
+                                        <a href="#second-block"><button>Shared cab</button></a>
+                                    </div>
+                                    <div class="box">
+                                        <a href="#second-block"><button>Other</button></a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+    			<div class="col-lg-12">
+    				<div class="row">
+    					<div id="second-block" class="block">
+    						<div class="rectangle medium"></div>
+    						<div class="heading">
+    							<div class="icon">
+    								<img src="images/auto-icon.png" alt="metro">
+    							</div>
+    							<div class="main">
+    								<div class="question">
+    									<p>How do you commute from <br> home to shuttl stop</p>
+    								</div>
+    								<div class="pick">
+    									<p>
+    										Select the one which you use the most
+    									</p>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="content">
+    							<div class="choose">
+    								<div class="box">
+    									<a href="#third-block"><button>App based <br>cab</button></a>
+    								</div>
+    								<div class="box">
+    									<a href="#third-block"><button>Cycle rickshaw</button></a>
+    								</div>
+    								<div class="clear"></div>
+    							</div>
+    							<div class="choose">
+    								<div class="box">
+    									<a href="#third-block"><button>Dropped by a <br>relative/friend</button></a>
+    								</div>
+    								<div class="box">
+    									<a href="#third-block"><button>Private vehicle</button></a>
+    								</div>
+    								<div class="clear"></div>
+    							</div>
+    							<div class="choose">
+    								<div class="box">
+    									<a href="#third-block"><button>Private auto</button></a>
+    								</div>
+    								<div class="box">
+    									<a href="#third-block"><button>Shared auto</button></a>
+    								</div>
+    								<div class="clear"></div>
+    							</div>
+    							<div class="choose">
+    								<div class="box">
+    									<a href="#third-block"><button>Walk</button></a>
+    								</div>
+    								<div class="box">
+    									<a href="#third-block"><button>Metro</button></a>
+    								</div>
+    								<div class="clear"></div>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-lg-12">
+    				<div class="row">
+    					<div id="third-block" class="block">
+    						<div class="rectangle full"></div>
+    						<div class="heading">
+    							<div class="icon">
+    								<img src="images/walk-icon.png" alt="metro">
+    							</div>
+    							<div class="main">
+    								<div class="question">
+    									<p>
+    										How do you commute from<br>
+                                            Shuttl stop to office?
+    									</p>
+    								</div>
+    								<div class="pick">
+    									<p>
+    										Select the one which you use the most
+    									</p>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="content">
+    							<div class="choose">
+    								<div class="box">
+    									<a href="http://offers.shuttl.com/vfm_bike/"><button>App based cab<br>service</button></a>
+    								</div>
+    								<div class="box">
+    									<a href="http://offers.shuttl.com/vfm_bike/"><button>Cycle Rickshaw</button></a>
+    								</div>
+    								<div class="clear"></div>
+    							</div>
+    							<div class="choose">
+    								<div class="box">
+    									<a href="http://offers.shuttl.com/vfm_bike/"><button>Dropped by <br>relative/friend</button></a>
+    								</div>
+    								<div class="box">
+    									<a href="http://offers.shuttl.com/vfm_bike/"><button>Private vehicle</button></a>
+    								</div>
+    								<div class="clear"></div>
+    							</div>
+    							<div class="choose">
+    								<div class="box">
+    									<a href="http://offers.shuttl.com/vfm_bike/"><button>Private auto</button></a>
+    								</div>
+    								<div class="box">
+    									<a href="http://offers.shuttl.com/vfm_bike/"><button>Shared auto</button></a>
+    								</div>
+    								<div class="clear"></div>
+    							</div>
+    							<div class="choose">
+    								<div class="box">
+    									<a href="http://offers.shuttl.com/vfm_bike/"><button>Walk</button></a>
+    								</div>
+    								<div class="box">	
+    									<a href="http://offers.shuttl.com/vfm_bike/"><button>Metro</button></a>
+    								</div>
+    								<div class="clear"></div>
+    							</div>
+    						</div>
+    						<div class="last">
+    							<a href="http://offers.shuttl.com/vfm_bike/"><input class="done" type="submit" name="submit" value="DONE"></a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    	</div>
+    </body>
+    </html>

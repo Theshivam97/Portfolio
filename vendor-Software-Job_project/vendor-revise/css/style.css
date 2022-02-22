@@ -1,0 +1,150 @@
+*{
+	margin:0px;
+}
+.header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #40739e;
+	align-items: baseline;
+	padding: 0px 15px;
+}
+.vendor-page{
+	padding: 0px !important;
+	background-color: #f0f0f0;
+}
+
+.header-headline{
+	color: #fff;
+	line-height: 70px;
+	font-size: 18px;
+	position: relative;
+	top: 5px;
+}
+.logo{
+	padding-top: 16px;
+}
+.logo img{
+	width: 111px;
+}
+.sub-header{
+	text-align: center;
+	background-color: #0097e6;
+	color: #fff;
+	line-height: 40px;
+	font-size: 18px;
+}
+.table-info{
+	margin: 0px !important;
+	text-align: center;
+}
+.align-item{
+	max-width: 400px;
+	width: auto;
+	margin: auto;
+	padding: 0px !important;
+	box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+}
+.align-list{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.table-heading{
+	text-align: center;
+	background-color: #0097e6;
+	line-height: 40px;
+	color: #fff;
+}
+.table-content{
+	height: 100px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.price{
+	background-color: #2f3640;
+	color: #fff;
+	line-height: 40px;
+}
+.status{
+	background-color: #fbc531;
+	line-height: 40px;
+}
+.price p{
+	margin: 0px !important;
+}
+.status p{
+	margin: 0px !important;
+}
+a{
+	color: #333 !important;
+	text-decoration: none !important;
+}
+
+/*.ripple:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: 0.8s
+}
+
+
+.ripple:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}*/
+/*a:active{
+	background-color: yellow;
+}*/
+
+.ripple:active{
+	background:#f1f1f1;
+	opacity: 0;
+	transition: 1.0s
+}
+
+
+
+
+
+
+.sep{
+	display: none;
+}
+
+
+
+
+
+
+
+#myHeader{
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+.content-vendor{
+	margin-top: 140px;
+}
+@media screen and  (max-width: 550px) {
+	.align-list{
+		display: block;
+	}
+	.align-item{
+		margin-top: 25px;
+
+	}
+	.content-vendor{
+		padding: 0px 20px;
+	}
+}

@@ -1,0 +1,175 @@
+* {
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #005874;
+    align-items: baseline;
+    padding: 0px 15px;
+}
+
+.vendor-page {
+    padding: 0px !important;
+}
+
+.header-headline {
+    color: #fff;
+    font-family: oxygen;
+    line-height: 70px;
+    font-size: 18px;
+    position: relative;
+    top: 5px;
+}
+
+.logo {
+    padding-top: 16px;
+}
+
+.logo img {
+    width: 111px;
+}
+
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: #1C819E;
+    color: #fff;
+    height: 50px;
+    align-items: center;
+}
+
+#myHeader {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#myFooter {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.admin-footer button {
+    width: 100%;
+    line-height: 26px;
+    background-color: darkgrey;
+    border-color: darkgrey;
+}
+
+.job-id {
+    font-size: 16px;
+    font-family: oxygen;
+    height: 18px;
+}
+
+.vendor-page {
+    padding: 0px !important;
+}
+
+.align-item {
+    width: 350px;
+    margin: auto;
+    padding: 0px !important;
+    box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, .2);
+}
+
+.align-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.table-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vendor-entity-label {
+    padding: 0px 10px;
+    background-color: #1c819e;
+    line-height: 30px;
+    color: #fff;
+    font-family: oxygen;
+    text-align: center;
+    border-right: 1px solid;
+}
+
+.vendor-entity-label p {
+    position: relative;
+    display: inline-block;
+    margin: 0 !important;
+}
+
+.vendor-entity-label i {
+    margin-right: 8px;
+}
+
+.vendor-entity-label-align p {
+    margin: 0px !important;
+}
+
+.vendor-entity-value {
+    padding: 0px 10px;
+    text-align: center;
+    font-family: oxygen;
+}
+
+.vendor-entity-value-align p {
+    margin: 0px !important;
+}
+
+.vendor-entity-value-align {
+    line-height: 40px;
+}
+
+a {
+    color: #333 !important;
+    text-decoration: none !important;
+}
+
+.admin-content {
+    margin-top: 140px;
+    padding-bottom: 30px !important;
+}
+
+.table-align-revise {
+    margin: 0px !important;
+}
+
+.view-job {
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6px 0px !important;
+    width: 120px;
+}
+
+.view-job p {
+    margin: 0px !important;
+}
+
+.vendor-entity-value p {
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 550px) {
+    .align-list {
+        display: block;
+    }
+    .align-item {
+        margin-top: 25px;
+        width: auto !important;
+
+    }
+    .admin-content {
+        padding: 0px 20px;
+    }
+}

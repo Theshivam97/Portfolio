@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Tempelate</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+   
+</head>
+
+<body>
+   <div class="container-fluid vendor-page">
+       
+      <div class="header-border"></div>
+       <div class="shuttl-header">
+           <div class="shuttl-logo">
+               <img src="images/shuttl-full.png" alt="shuttl-logo">
+           </div>
+           <div class="shuttl-headline">
+               <p>List of Following Jobs</p>
+           </div>
+           
+       </div>
+       <div class="view" style="margin-left: 15px; margin-top: 20px;">
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+              View Jobs
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalCenterTitle">Add Job</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modale-admin-content">
+                      <form>
+                        
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">Type Of Job</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Office Cabs</option>
+                            <option>Home cabs</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">End Date</label>
+                          <input type="date" class="form-control"  placeholder="End Date">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">End Date</label>
+                          <input type="date" class="form-control"  placeholder="End Date">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">Is Recurring</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>No</option>
+                            <option>Yes</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">Day of operation</label>
+                          <div class="form-admin-inline" style=" display: flex;justify-content: space-around;">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                          <label class="form-check-label" for="inlineCheckbox1">Mon</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                          <label class="form-check-label" for="inlineCheckbox2">Tue</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                          <label class="form-check-label" for="inlineCheckbox2">Wed</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                          <label class="form-check-label" for="inlineCheckbox2">Thu</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                          <label class="form-check-label" for="inlineCheckbox2">Fri</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                          <label class="form-check-label" for="inlineCheckbox2">Sat</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                          <label class="form-check-label" for="inlineCheckbox2">Sun</label>
+                        </div>
+
+                        </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Route</label>
+                          <input type="Text" class="form-control"  placeholder="Route">
+                        </div>
+                      </form>
+
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add Job</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+       </div>
+       <div class="content">
+           <ul class="list-group">
+              <li class="list-group-item align-list">
+                <a href="#">
+                  <div class="list-content">
+                    <div class="first-part">
+                          <div class="job-id job-responsive">
+                            <div class="job-id-label">
+                                <p>Vehicle</p>
+                            </div>
+                            <div class="job-id-value">
+                                <p>Swift Dzire</p>
+                            </div>
+                          </div>
+                          <div class="job-type job-responsive">
+                            <div class="job-type-label">
+                                <p>Type</p>
+                            </div>
+                            <div class="job-type-value">
+                                <p>Office Cabs</p>
+                            </div>
+                          </div>
+                      </div>
+                      <hr class="sep">
+                          <div class="route job-responsive">
+                            <div class="route-label">
+                                <p>Route</p>
+                            </div>
+                            <div class="route-value">
+                                <p>Gurgaon->Saket->CP->Rohini->Delhi</p>
+                            </div>
+                          </div>
+                          <hr class="sep">
+                          <div class="last-part">
+                          <div class="price job-responsive">
+                            <div class="price-label">
+                                <p>Price</p>
+                            </div>
+                            <div class="price-value">
+                                <p>Rs. 25000/-</p>
+                            </div>
+                          </div>
+                          <div class="submit job-responsive">
+                              <div class="submit-label">
+                                  <p>Status</p>
+                              </div>
+                              <div class="submit-value">
+                                  <p>Processed</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+              </li>
+              <li class="list-group-item align-list">
+                <a href="#">
+                  <div class="list-content">
+                    <div class="first-part">
+                          <div class="job-id job-responsive">
+                            <div class="job-id-label">
+                                <p>Vehicle</p>
+                            </div>
+                            <div class="job-id-value">
+                                <p>Swift Dzire</p>
+                            </div>
+                          </div>
+                          <div class="job-type job-responsive">
+                            <div class="job-type-label">
+                                <p>Type</p>
+                            </div>
+                            <div class="job-type-value">
+                                <p>Office Cabs</p>
+                            </div>
+                          </div>
+                      </div>
+                      <hr class="sep">
+                          <div class="route job-responsive">
+                            <div class="route-label">
+                                <p>Route</p>
+                            </div>
+                            <div class="route-value">
+                                <p>Gurgaon->Saket->CP->Rohini->Delhi</p>
+                            </div>
+                          </div>
+                          <hr class="sep">
+                          <div class="last-part">
+                          <div class="price job-responsive">
+                            <div class="price-label">
+                                <p>Price</p>
+                            </div>
+                            <div class="price-value">
+                                <p>Rs. 25000/-</p>
+                            </div>
+                          </div>
+                          <div class="submit job-responsive">
+                              <div class="submit-label">
+                                  <p>Status</p>
+                              </div>
+                              <div class="submit-value">
+                                  <p>Processed</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+              </li>
+              <li class="list-group-item align-list">
+                <a href="#">
+                  <div class="list-content">
+                    <div class="first-part">
+                          <div class="job-id job-responsive">
+                            <div class="job-id-label">
+                                <p>Vehicle</p>
+                            </div>
+                            <div class="job-id-value">
+                                <p>Swift Dzire</p>
+                            </div>
+                          </div>
+                          <div class="job-type job-responsive">
+                            <div class="job-type-label">
+                                <p>Type</p>
+                            </div>
+                            <div class="job-type-value">
+                                <p>Office Cabs</p>
+                            </div>
+                          </div>
+                      </div>
+                      <hr class="sep">
+                          <div class="route job-responsive">
+                            <div class="route-label">
+                                <p>Route</p>
+                            </div>
+                            <div class="route-value">
+                                <p>Gurgaon->Saket->CP->Rohini->Delhi</p>
+                            </div>
+                          </div>
+                          <hr class="sep">
+                          <div class="last-part">
+                          <div class="price job-responsive">
+                            <div class="price-label">
+                                <p>Price</p>
+                            </div>
+                            <div class="price-value">
+                                <p>Rs. 25000/-</p>
+                            </div>
+                          </div>
+                          <div class="submit job-responsive">
+                              <div class="submit-label">
+                                  <p>Status</p>
+                              </div>
+                              <div class="submit-value">
+                                  <p>Processed</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+              </li>
+              <li class="list-group-item align-list">
+                <a href="#">
+                  <div class="list-content">
+                    <div class="first-part">
+                          <div class="job-id job-responsive">
+                            <div class="job-id-label">
+                                <p>Vehicle</p>
+                            </div>
+                            <div class="job-id-value">
+                                <p>Swift Dzire</p>
+                            </div>
+                          </div>
+                          <div class="job-type job-responsive">
+                            <div class="job-type-label">
+                                <p>Type</p>
+                            </div>
+                            <div class="job-type-value">
+                                <p>Office Cabs</p>
+                            </div>
+                          </div>
+                      </div>
+                      <hr class="sep">
+                          <div class="route job-responsive">
+                            <div class="route-label">
+                                <p>Route</p>
+                            </div>
+                            <div class="route-value">
+                                <p>Gurgaon->Saket->CP->Rohini->Delhi</p>
+                            </div>
+                          </div>
+                          <hr class="sep">
+                          <div class="last-part">
+                          <div class="price job-responsive">
+                            <div class="price-label">
+                                <p>Price</p>
+                            </div>
+                            <div class="price-value">
+                                <p>Rs. 25000/-</p>
+                            </div>
+                          </div>
+                          <div class="submit job-responsive">
+                              <div class="submit-label">
+                                  <p>Status</p>
+                              </div>
+                              <div class="submit-value">
+                                  <p>Processed</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+              </li>
+              <li class="list-group-item align-list">
+                <a href="#">
+                  <div class="list-content">
+                    <div class="first-part">
+                          <div class="job-id job-responsive">
+                            <div class="job-id-label">
+                                <p>Vehicle</p>
+                            </div>
+                            <div class="job-id-value">
+                                <p>Swift Dzire</p>
+                            </div>
+                          </div>
+                          <div class="job-type job-responsive">
+                            <div class="job-type-label">
+                                <p>Type</p>
+                            </div>
+                            <div class="job-type-value">
+                                <p>Office Cabs</p>
+                            </div>
+                          </div>
+                      </div>
+                      <hr class="sep">
+                          <div class="route job-responsive">
+                            <div class="route-label">
+                                <p>Route</p>
+                            </div>
+                            <div class="route-value">
+                                <p>Gurgaon->Saket->CP->Rohini->Delhi</p>
+                            </div>
+                          </div>
+                          <hr class="sep">
+                          <div class="last-part">
+                          <div class="price job-responsive">
+                            <div class="price-label">
+                                <p>Price</p>
+                            </div>
+                            <div class="price-value">
+                                <p>Rs. 25000/-</p>
+                            </div>
+                          </div>
+                          <div class="submit job-responsive">
+                              <div class="submit-label">
+                                  <p>Status</p>
+                              </div>
+                              <div class="submit-value">
+                                  <p>Processed</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+              </li>
+           </ul>
+       </div>
+   </div>
+</body>
+
+</html>

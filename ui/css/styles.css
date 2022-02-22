@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+div {
+    display: block;
+}
+
+.headWrapper {
+    background-image: url("../res/Asset%2023.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 480px;
+    padding: 40px;
+}
+
+.banner {
+    display: block;
+}
+
+
+.content {
+    width: 100%;
+    height: 100%;
+    clear: both;
+}
+
+.heading > p {
+    font-style: normal;
+    /*text-transform: uppercase;*/
+    font-size: 65px;
+    color: white;
+    font-weight: 300;
+    margin-top: 180px;
+    line-height: 60px;
+    z-index: 9999;
+    /*text-transform: capitalize;*/
+    /*    position: absolute;*/
+}
+
+.subheading {
+    height: 75px;
+    font-size: 35px;
+    line-height: 75px;
+    padding: 0 40px;
+    background: rgb(0, 173, 183);
+    color: white;
+    font-weight: 400;
+
+}
+
+.overlayImg {
+    position: absolute;
+    top: 124px;
+    right: 40px;
+    z-index: 99;
+}
+
+.changeTheWorldMetrics {
+    background: #f0efef;
+    height: auto;
+    padding: 30px 0;
+}
+
+.moduleWrapper {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.moduleWrapper > .modules {
+    width: auto;
+    display: inline-block;
+    margin: 30px;
+}
+
+.changeTheWorldMetrics > .moduleWrapper > .modules > .mInfo {
+    padding: 10px;
+    margin: 10px;
+    color: #7d7d7d;
+    font-weight: 400;
+    width: 218px;
+    height: 61px;
+}
+
+.changeTheWorldMetrics > .moduleWrapper > .modules > .mInfo > .spec {
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+.changeTheWorldMetrics > .moreText {
+    padding: 0 40px;
+}
+
+.changeTheWorldMetrics > .moreText > .big {
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 36px;
+    color: #383838;
+}
+
+.changeTheWorldMetrics > .moreText > .small {
+    font-weight: 200;
+    color: #6a6a6a;
+    font-size: 20px;
+}
+
+.helpingYourself {
+    background: white;
+    height: auto;
+    padding: 40px;
+}
+
+.helpingYourself > .moreText > .big {
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 30px;
+    color: #383838;
+}
+
+.helpingYourself > .moreText > .medium {
+    font-weight: 200;
+    color: #6a6a6a;
+    font-size: 20px;
+}
+
+.helpingYourself > .moduleWrapper > .modules > .mInfo {
+    color: #7d7d7d;
+    font-weight: 400;
+    margin: 10px;
+    width: 200px;
+}
+
+.referYourFriend {
+    background: #f0efef;
+    height: auto;
+    padding: 40px;
+}
+
+.referYourFriend > .heading {
+    font-size: 20px;
+    font-weight: 200;
+    color: #383838;
+
+}
+
+.referYourFriend > .heading > .moreText > .big{
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 36px;
+    color: #383838;
+}
+
+.referYourFriend > .heading > .moreText > .big > .tagLine {
+    font-size: 24px;
+}
+
+.referYourFriend > .milestone > button {
+    height: 68px;
+    width: 376px;
+    margin: 50px 0;
+    border-radius: 10px;
+    background: rgb(0, 173, 183);
+    color: white;
+    font-size: 35px;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+/*Handling top banner for lower width*/
+
+@media only screen and (max-width: 1050px) {
+
+
+    .heading > p {
+        position: absolute;
+        top: 280px;
+        line-height: 50px;
+        font-size: 40px;
+        font-weight: 500;
+        left: 0;
+        width: calc(100% - 80px);
+        text-align: center;
+        color: rgb(0, 173, 183);
+        padding: 0 40px;
+    }
+
+    .changeTheWorldMetrics {
+        padding-top: 200px;
+    }
+
+    .referYourFriend > .milestone > button {
+        height: auto;
+        min-height: 68px;
+        max-width: 376px;
+        width: 100%;
+        font-size: 28px;
+        text-transform: capitalize;
+    }
+
+    .referYourFriend > .heading {
+        text-align: left;
+    }
+    .headWrapper {
+        height: 300px;
+    }
+
+    .overlayImg {
+        top: 106px;
+    }
+    #superHuman {
+        height: 300px;
+    }
+
+    .moduleWrapper > .modules {
+        margin: 10px;
+        padding: 0px;
+    }
+
+    .changeTheWorldMetrics > .moduleWrapper > .modules > .mInfo {
+        margin: 0px;
+    }
+
+    .referYourFriend{
+        text-align: center;
+    }
+
+    .referYourFriend > .heading {
+        font-size: 20px;
+    }
+}

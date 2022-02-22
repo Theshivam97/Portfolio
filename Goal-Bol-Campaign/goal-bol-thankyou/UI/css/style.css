@@ -1,0 +1,441 @@
+#header {
+    height: 60px;
+    font-size: 26px;
+    background-color: #00adb7;
+    padding: 0 20px;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-color: #2F8796;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+.center {
+    text-align: center;
+    display: block;
+}
+
+.mc {
+    margin: 0 auto;
+}
+
+#landingPage,
+#helpPage {
+    height: 100%;
+    display: block;
+    padding: 20px 20px;
+    padding-top: 125px;
+}
+
+.razorpay-payment-button {
+    width: 100%;
+    height: 60px !important;
+    font-weight: normal;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    letter-spacing: 0.04rem !important;
+    word-spacing: 0.1rem !important;
+    /* position: absolute; */
+    /* bottom: 20px; */
+    /* left: 20px; */
+    background: rgba(255, 191, 50, 1);
+    color: rgba(74, 74, 74, 1);
+    border: none !important;
+    /* border-radius: 32px !important; */
+    cursor: auto;
+    padding: 10px !important;
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+#numberField {
+    width: 100%;
+    height: 60px;
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: inherit;
+    text-align: left;
+    letter-spacing: inherit;
+    margin-bottom: 20px;
+    padding: 0 2.0rem;
+    background-color: white;
+    color: rgba(74, 74, 74, 1)
+}
+
+#numberField::-webkit-input-placeholder,
+option.selectPlaceholder {
+    color: rgba(214, 214, 214, 1);
+}
+
+#numberField:-ms-input-placeholder,
+option.selectPlaceholder {
+    color: rgba(214, 214, 214, 1);
+}
+
+#numberField::-ms-input-placeholder,
+option.selectPlaceholder {
+    color: rgba(214, 214, 214, 1);
+}
+
+#numberField::placeholder,
+option.selectPlaceholder {
+    color: rgba(214, 214, 214, 1);
+}
+
+.blendit {
+    opacity: 0.8;
+}
+
+.colorful {
+    background-image: -webkit-linear-gradient(-213deg, rgba(255, 229, 82, 1) 0%, rgba(0, 173, 183, 1) 57%, rgba(0, 56, 193, 1) 100%);
+    background-image: -o-linear-gradient(-213deg, rgba(255, 229, 82, 1) 0%, rgba(0, 173, 183, 1) 57%, rgba(0, 56, 193, 1) 100%);
+    background-image: -webkit-linear-gradient(303deg, rgba(255, 229, 82, 1) 0%, rgba(0, 173, 183, 1) 57%, rgba(0, 56, 193, 1) 100%);
+    background-image: -o-linear-gradient(303deg, rgba(255, 229, 82, 1) 0%, rgba(0, 173, 183, 1) 57%, rgba(0, 56, 193, 1) 100%);
+    background-image: linear-gradient(-213deg, rgba(255, 229, 82, 1) 0%, rgba(0, 173, 183, 1) 57%, rgba(0, 56, 193, 1) 100%);
+    background-repeat: no-repeat;
+}
+
+.plainCol {
+    background: white;
+}
+
+h1 {
+    /*    margin-top: 20px;*/
+    font-size: 36px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    letter-spacing: 0.08em;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+ul {
+    margin-bottom: 0px;
+    list-style-position: outside;
+    list-style-type: unset;
+}
+
+.banner p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+}
+
+#helpMe {
+    height: 60px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(255, 218, 103, 1);
+    border-radius: 5px;
+    -webkit-box-shadow: -1px 2px 6px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: -1px 2px 6px 0px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin: 20px 0;
+    /*
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+*/
+}
+
+button#routeSelectionBtn {
+    width: 100%;
+    height: 60px;
+    font-weight: normal;
+    font-size: 16px;
+    opacity: .5;
+    cursor: auto;
+}
+
+#thankYouPage {
+    background: rgba(0, 173, 183, 1);
+    color: white;
+}
+
+button#thankYouBtn {
+    position: absolute;
+    left: 20px;
+    /* right: calc(100% - 20px); */
+    width: calc(100% - 40px);
+    height: 60px;
+    bottom: 20px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 16px;
+    background: white;
+    color: rgba(0, 173, 183, 1);
+}
+
+
+/*Adding images*/
+
+button#routeBtn {
+    background-image: url(../res/chevron.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 15px;
+    background-position-x: calc(100% - 20px);
+}
+
+.cnum {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 24px;
+    background-position-x: calc(100% - 20px);
+}
+
+blockquote#error {
+    border-color: rgba(180, 39, 39, 1);
+    color: rgba(180, 39, 39, 1);
+    margin: 0;
+    margin-top: -15px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.loadingIcon {
+    background-image: url(../res/loader.svg);
+}
+
+.validationFailIcon {
+    background-image: url(../res/error.png)
+}
+
+.validationPassIcon {
+    background-image: url(../res/tick.svg);
+}
+
+.offerPoints p {
+    font-size: 16px;
+    color: rgba(74, 74, 74, 1);
+    text-align: left;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+div#centerThanks {
+    position: relative;
+    top: 25%;
+}
+
+img.center.mc {
+    /*    padding-top: 60%;*/
+    margin-bottom: 30px;
+    /* height: 110px; */
+}
+
+div#landingPage {
+    background: transparent;
+    height: auto;
+    padding-top: 300px;
+}
+
+div.bullet {
+    height: 15px;
+}
+
+div#congratulations {
+    background-image: url(../res/gift_v2.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    position: relative;
+    top: -50px;
+    margin-bottom: 15px;
+}
+
+.claimFix {
+    margin-top: -15px;
+}
+
+img#headImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 310px;
+}
+
+img#giftImg {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+div#op1 {
+    padding-left: 60px;
+    background-image: url(../res/bullet_1.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center left;
+}
+
+div#op2 {
+    padding-left: 60px;
+    background-image: url(../res/bullet_2.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center left;
+}
+
+div#op3 {
+    padding-left: 60px;
+    background-image: url(../res/bullet_3.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center left;
+}
+
+.giftCondition {
+    margin: 20px 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(95, 177, 182, 1);
+    text-align: left;
+    letter-spacing: 0.02em;
+    line-height: 16px;
+    position: relative;
+    top: 55%;
+}
+
+.giftText {
+    /*
+    padding-left: 50%;
+    padding-top: 40%;
+    padding-bottom: 5%;
+*/
+    position: relative;
+    left: 50%;
+    top: 52%;
+    width: 45%;
+}
+
+.giftDisc {
+    font-size: 30px;
+    font-weight: 900;
+    color: rgba(0, 173, 183, 1);
+    text-align: left;
+    line-height: 35px;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+}
+
+.giftHead {
+    font-size: 12px;
+    font-weight: 900;
+    color: rgba(0, 173, 183, 0.5);
+    text-align: left;
+    letter-spacing: 0.07em;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+.button-clear {
+    border: none;
+    padding: 5px 0;
+    letter-spacing: normal;
+    padding: 10px 0;
+    line-height: normal;
+    font-size: 12px;
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    #landingPage,
+    #routePage,
+    #thankYouPage {
+        height: 100%;
+        display: block;
+        padding: 20px 20%;
+    }
+}
+
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    #landingPage,
+    #routePage,
+    #thankYouPage {
+        height: 100%;
+        display: block;
+        padding: 20px 20%;
+    }
+}
+
+.head {
+    display: block;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-image: url(../res/title%20banner%20bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+#moreDetails {
+    font-size: 12px;
+    color: rgba(163, 163, 163, 1);
+    text-align: left;
+    letter-spacing: 0.02em;
+    line-height: 17px;
+    padding-left: 80px;
+}
+
+#moreDetailsBtn {
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+span#closeBtn {
+    float: right;
+    padding: 5px 15px;
+    color: lightgray;
+    font-size: 20px;
+}
+
+span#closeBtn:hover {
+    cursor: pointer;
+}

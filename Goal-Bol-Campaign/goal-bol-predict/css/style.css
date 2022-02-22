@@ -1,0 +1,265 @@
+*
+{
+	margin: 0px;
+}
+.clear
+{
+	clear: both;
+}
+.container
+{
+	width: 100%;
+	min-width: 360px;
+	margin: auto;
+}
+.day p
+{
+	
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+  float: left;
+
+}
+.no-of-matches p
+{
+	 font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #a3a3a3;
+  float: left;
+  margin-left: 7px;
+}
+.match-details
+{
+
+  width: 274px;
+  margin: auto;
+  padding: 27px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+
+}
+.match-team
+{
+	float: left;
+	
+}
+.match-team-1
+{
+	float: right !important;
+}
+.team-logo
+{
+
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 2px #dfdfdf;
+
+}
+.team-name p
+{
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+
+}
+.match-time
+{
+	float: left;
+	margin-left: 82px;
+	margin-top: 17px;
+
+}
+.time-logo
+{
+	text-align: center;
+}
+.time-logo img
+{
+	width: 18px;
+	height: 18px;
+	opacity: 0.5
+}
+.time p
+{
+
+  opacity: 0.5;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  margin-top: 8px;
+
+}
+.border
+{
+	float: left;
+  width: 48px;
+  border: solid 1px #eeeeee;
+  margin-top: 7px;
+}
+.border-1
+{
+	float: right !important;
+}
+.headline
+{
+	float: left;
+	margin-left: 4px;
+}
+.match-credential
+{
+	margin-top: 30px;
+	margin-bottom: 16px;
+	margin-left: 17px;
+}
+.headline p
+{
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #a1a1a1;
+
+}
+.decrease 
+{
+  float: left;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.increase
+{
+  float: right;
+  margin-right: 5px;
+  margin-top: 12px;
+}
+.increase button
+{
+  background: none;
+  border:none;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: Roboto;
+  color: #7f7f7f;
+}
+.decrease button
+{
+  background: none;
+  border:none;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: Roboto;
+  color: #7f7f7f;
+}
+.no-of-goals p
+{
+	float: left;
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4a4a4a;
+  margin-left: 105px;
+
+}
+.campaign-headline
+{
+	margin-top: 35px;
+	margin-bottom: 36px;
+}
+.team-name
+{
+	margin-top: 10px;
+}
+.submit
+{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.submit button
+{
+  width: 100%;
+  min-width: 360px;
+  height: 64px;
+  background-color: #00adb7;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
+  border:none;
+}
+.match-card
+{
+	padding-bottom: 16px;
+}
+.match-content
+{
+  overflow: auto;
+}
+.addButton
+{
+  border:none;
+  background-color: #ffffff;
+  font-size: 25px;
+  color: #7f7f7f;
+  margin-left: 90px;
+}
+.minusButton
+{
+  border:none;
+  margin-left: 5px;
+  background-color: #ffffff;
+  font-size: 25px;
+  color: #7f7f7f;
+}
+.predicted-goals
+{
+  width: 28px;
+  text-align: center;
+  font-size: 48px;
+  font-family: Roboto;
+  font-weight: 300;
+  color: #4a4a4a;
+  border:none;
+  margin-left: 90px;
+}
